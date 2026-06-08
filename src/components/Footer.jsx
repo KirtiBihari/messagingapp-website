@@ -3,43 +3,65 @@ import { FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-lg font-bold mb-4">PRODUCTS</h3>
-            <ul className="space-y-2">
-              <li><Link to="/products#sms" className="hover:text-blue-400">SMS</Link></li>
-              <li><Link to="/products#voice" className="hover:text-blue-400">Voice</Link></li>
-              <li><Link to="/products#whatsapp" className="hover:text-blue-400">WhatsApp</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">COMPANY</h3>
-            <ul className="space-y-2">
-              <li><Link to="/about" className="hover:text-blue-400">About</Link></li>
-              <li><Link to="/blog" className="hover:text-blue-400">Blog</Link></li>
-              <li><Link to="/contact" className="hover:text-blue-400">Contact</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">LEGAL</h3>
-            <ul className="space-y-2">
-              <li><Link to="/privacy" className="hover:text-blue-400">Privacy</Link></li>
-              <li><Link to="/terms" className="hover:text-blue-400">Terms</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4">FOLLOW US</h3>
-            <div className="flex space-x-4">
-              <a href="#x" className="hover:text-blue-400"><FaTwitter size={24} /></a>
-              <a href="#instagram" className="hover:text-blue-400"><FaInstagram size={24} /></a>
-              <a href="#youtube" className="hover:text-blue-400"><FaYoutube size={24} /></a>
+    <footer className="mt-24 border-t border-brand-200 bg-white/40">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1.6fr)_repeat(3,minmax(0,1fr))]">
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-2xl font-semibold text-brand-950">Messaging App</h3>
+            </div>
+            <p className="max-w-xl text-sm leading-7 text-brand-600">
+              Communication infrastructure for African businesses. SMS, Email and WhatsApp - one platform, fair pricing, local support.
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <label htmlFor="newsletter" className="sr-only">Email</label>
+              <input
+                id="newsletter"
+                type="email"
+                placeholder="you@company.com"
+                className="min-w-0 flex-1 rounded-3xl border border-brand-200/60 bg-brand-50 px-4 py-3 text-sm text-brand-950 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-950/10"
+              />
+              <button className="inline-flex items-center justify-center rounded-3xl bg-brand-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-900">
+                Subscribe
+              </button>
             </div>
           </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-600">Products</h4>
+            <ul className="mt-6 space-y-3 text-sm text-brand-700">
+              <li><Link to="/products#sms" className="transition hover:text-brand-950">SMS</Link></li>
+              <li><Link to="/products#email" className="transition hover:text-brand-950">Email & SMTP</Link></li>
+              <li><Link to="/products#whatsapp" className="transition hover:text-brand-950">WhatsApp</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-600">Company</h4>
+            <ul className="mt-6 space-y-3 text-sm text-brand-700">
+              <li><Link to="/about" className="transition hover:text-brand-950">About</Link></li>
+              <li><Link to="/blog" className="transition hover:text-brand-950">Blog</Link></li>
+              <li><Link to="/docs" className="transition hover:text-brand-950">Docs</Link></li>
+              <li><Link to="/contact" className="transition hover:text-brand-950">Contact</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-600">Legal</h4>
+            <ul className="mt-6 space-y-3 text-sm text-brand-700">
+              <li><Link to="/privacy" className="transition hover:text-brand-950">Privacy</Link></li>
+              <li><Link to="/terms" className="transition hover:text-brand-950">Terms</Link></li>
+            </ul>
+          </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p>&copy; 2026 Messaging App. All rights reserved.</p>
+
+        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-brand-200 pt-8 text-sm text-brand-600 md:flex-row md:items-center">
+          <p>© 2026 Messaging App. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-4 text-brand-700">
+            <a href="https://x.com/WaviAfrica" className="transition hover:text-brand-950">X / Twitter</a>
+            <a href="https://www.instagram.com/waviafrica/" className="transition hover:text-brand-950">Instagram</a>
+            <a href="https://www.youtube.com/@WaviAfrica" className="transition hover:text-brand-950">YouTube</a>
+          </div>
         </div>
       </div>
     </footer>

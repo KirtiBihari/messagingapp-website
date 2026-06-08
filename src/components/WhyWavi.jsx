@@ -2,31 +2,46 @@ import { FaGlobeAsia, FaCode, FaShieldAlt } from 'react-icons/fa';
 
 const WhyWavi = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-6">The fastest way to talk to the continent.</h2>
-        <p className="text-center text-xl mb-16 max-w-2xl mx-auto text-gray-600">We run the routes, we run the SMTP, and we run the support - so you only deal with one API key and one invoice.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="text-center group">
-            <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition duration-300">
-              <FaGlobeAsia className="text-blue-600 text-3xl" />
+    <section className="py-16">
+      <div className="container-narrow">
+        <h2 className="text-4xl font-display mb-4">The fastest way to talk to the continent.</h2>
+        <p className="text-lg text-slate-600 mb-10 max-w-2xl">We run the routes, the SMTP and the support — so you only manage one API key and one invoice.</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="card text-left">
+            <div className="flex items-center gap-4">
+              <div className="rounded-lg bg-slate-950 p-3">
+                <FaGlobeAsia className="text-white text-xl" />
+              </div>
+              <div>
+                <h3 className="font-semibold">Built for Africa</h3>
+                <p className="mt-2 text-sm text-slate-600">Local routes, regional carriers and local support for reliable delivery.</p>
+              </div>
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Built for India</h3>
-            <p className="text-gray-600 text-lg">Local routes, local carriers, local support - not a US platform with Indian SKUs.</p>
           </div>
-          <div className="text-center group">
-            <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition duration-300">
-              <FaCode className="text-blue-600 text-3xl" />
+
+          <div className="card text-left">
+            <div className="flex items-center gap-4">
+              <div className="rounded-lg bg-slate-950 p-3">
+                <FaCode className="text-white text-xl" />
+              </div>
+              <div>
+                <h3 className="font-semibold">One API, one dashboard</h3>
+                <p className="mt-2 text-sm text-slate-600">Send SMS, Email and WhatsApp without integrating multiple vendors.</p>
+              </div>
             </div>
-            <h3 className="text-2xl font-semibold mb-4">One API, one dashboard</h3>
-            <p className="text-gray-600 text-lg">Switch between SMS, Email and WhatsApp without integrating three vendors.</p>
           </div>
-          <div className="text-center group">
-            <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition duration-300">
-              <FaShieldAlt className="text-blue-600 text-3xl" />
+
+          <div className="card text-left">
+            <div className="flex items-center gap-4">
+              <div className="rounded-lg bg-slate-950 p-3">
+                <FaShieldAlt className="text-white text-xl" />
+              </div>
+              <div>
+                <h3 className="font-semibold">Compliance-ready</h3>
+                <p className="mt-2 text-sm text-slate-600">Sender registration, opt-outs and deliverability best-practices handled.</p>
+              </div>
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Compliance-ready</h3>
-            <p className="text-gray-600 text-lg">SPF, DKIM, DMARC, opt-outs, and sender registration handled end-to-end.</p>
           </div>
         </div>
       </div>
