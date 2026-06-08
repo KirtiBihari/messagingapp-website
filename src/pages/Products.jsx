@@ -1,8 +1,33 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { FaSms, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Products = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      if (location.hash) {
+        const id = location.hash.replace('#', '');
+        const el = document.getElementById(id);
+        if (el) {
+          const headerOffset = 80; // account for sticky header height
+          const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }
+    };
+
+    // run after render/layout
+    const raf = requestAnimationFrame(() => {
+      scrollToHash();
+    });
+
+    return () => cancelAnimationFrame(raf);
+  }, [location]);
   return (
     <div>
       <Header />
