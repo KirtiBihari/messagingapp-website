@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import ProductsOverview from '../components/ProductsOverview';
-import WhyWavi from '../components/WhyWavi';
+import WhyMessagingApp from '../components/WhyMessagingApp';
 import Features from '../components/Features';
 import ReadySection from '../components/ReadySection';
 
@@ -12,7 +12,7 @@ const Home = () => {
       <Header />
       <Hero />
       <ProductsOverview />
-      <WhyWavi />
+      <WhyMessagingApp />
       <Features />
       <ReadySection />
       <Footer />

@@ -5,7 +5,7 @@ const Docs = () => {
   return (
     <div>
       <Header />
-      <section className="py-16">
+      <section className="py-14">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Documentation</h1>
           <p className="text-lg text-center mb-8">API documentation and integration guides.</p>
@@ -16,8 +16,8 @@ const Docs = () => {
               <a href="#" className="text-blue-600 hover:underline">View Docs</a>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">Email API</h2>
-              <p className="text-gray-600 mb-4">Integrate email sending.</p>
+              <h2 className="text-xl font-semibold mb-2">Voice API</h2>
+              <p className="text-gray-600 mb-4">Integrate voice calling.</p>
               <a href="#" className="text-blue-600 hover:underline">View Docs</a>
             </div>
           </div>

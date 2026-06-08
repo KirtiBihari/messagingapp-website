@@ -11,7 +11,7 @@ const Products = () => {
           <div className="mb-16 max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.32em] text-brand-500">Products</p>
             <h1 className="mt-6 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">Every channel your customers actually use.</h1>
-            <p className="mt-6 text-lg leading-8 text-slate-600">Wavi is one API, one dashboard and one wallet for SMS, Email and WhatsApp. Here's what's live and what's next.</p>
+            <p className="mt-6 text-lg leading-8 text-slate-600">MessagingApp is one API, one dashboard and one wallet for SMS, Voice and WhatsApp. Here's what's live and what's next.</p>
           </div>
 
           <div className="space-y-10">
@@ -212,7 +212,7 @@ const Products = () => {
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     </span>
-                    <span>Unified with SMS and Email in one dashboard</span>
+                    <span>Unified with SMS and Voice in one dashboard</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm text-slate-700">
                     <span className="mt-0.5 text-emerald-700">

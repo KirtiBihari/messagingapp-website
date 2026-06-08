@@ -1,6 +1,6 @@
 # Prompt for Creating React Project Similar to Messaging App
 
-Create a complete React application that replicates the functionalities, design, and structure of the Waviindia website (https://waviindia.com/). The website is a landing page for a communication infrastructure service providing SMS, Email, and WhatsApp messaging for Indian businesses.
+Create a complete React application that replicates the functionalities, design, and structure of the MessagingApp website (https://messagingapp.com/). The website is a landing page for a communication infrastructure service providing SMS, Voice, and WhatsApp messaging for businesses.
 
 ## Project Requirements
 
@@ -21,7 +21,7 @@ Create a complete React application that replicates the functionalities, design,
 
 1. **Home Page (`/`)**:
    - **Hero Section**: Large banner with tagline "Reach every carrier. Everywhere on the continent." Include call-to-action buttons like "Contact sales" and "See products".
-   - **Products Overview Section**: Highlight three channels - SMS, Email & SMTP, WhatsApp (with "Coming Soon" badge for WhatsApp).
+   - **Products Overview Section**: Highlight three channels - SMS, Voice, WhatsApp (with "Coming Soon" badge for WhatsApp).
    - **Why Messaging App Section**: Explain benefits like "Built for India", "One API, one dashboard", "Compliance-ready".
    - **Ready Section**: Call-to-action to "Ship your first message this week" with contact links.
    - **Footer**: Include company info, links to Products, Company (About, Blog, Docs, Contact), Legal (Privacy, Terms), and social media links (X/Twitter, Instagram, YouTube).
@@ -29,9 +29,9 @@ Create a complete React application that replicates the functionalities, design,
 2. **Products Page (`/products`)**:
    - Detailed sections for each product:
      - **SMS**: Direct carrier routes, transparent pricing, delivery receipts, use cases (OTPs, alerts, marketing).
-     - **Email & SMTP**: Transactional/marketing, Postfix + OpenDKIM stack, DKIM/SPF/DMARC, tracking, suppression lists, webhooks.
+     - **Voice**: IVR, call routing and dedicated support numbers for teams..
      - **WhatsApp**: Official Business API, templates, two-way conversations, automations (coming soon, with early access signup).
-   - Include anchor links for each section (e.g., #sms, #email, #whatsapp).
+   - Include anchor links for each section (e.g., #sms, #voice, #whatsapp).
 
 3. **About Page (`/about`)**:
    - Company information, mission, team (if available), and background on being built for India.
@@ -43,9 +43,9 @@ Create a complete React application that replicates the functionalities, design,
    - Documentation hub with links to API docs, guides, and integration tutorials.
 
 6. **Contact Page (`/contact`)**:
-   - Contact form with fields for name, email, company, message, and use case (volumes, compliance needs).
-   - Form validation and submission handling (mock API or email service integration).
-   - Additional contact info like email or phone.
+   - Contact form with fields for name, voice, company, message, and use case (volumes, compliance needs).
+   - Form validation and submission handling (mock API or voice service integration).
+   - Additional contact info like voice or phone.
 
 7. **Privacy Page (`/privacy`)**:
    - Privacy policy content.
@@ -55,7 +55,7 @@ Create a complete React application that replicates the functionalities, design,
 
 ### Shared Components
 
-- **Header/Navigation**: Sticky header with logo, navigation links (Products, Company dropdown with About/Blog/Docs/Contact, Legal dropdown), and "Sign in" button linking to external app (https://app.waviindia.com/login).
+- **Header/Navigation**: Sticky header with logo, navigation links (Products, Company dropdown with About/Blog/Docs/Contact, Legal dropdown), and "Sign in" button linking to external app (https://app.messagingapp.com/login).
 - **Footer**: As described in Home Page.
 - **Button**: Reusable button component for CTAs.
 - **Card**: For product highlights.

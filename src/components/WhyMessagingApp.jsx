@@ -1,8 +1,8 @@
 import { FaGlobeAsia, FaCode, FaShieldAlt } from 'react-icons/fa';
 
-const WhyWavi = () => {
+const WhyMessagingApp = () => {
   return (
-    <section className="py-16">
+    <section className="py-14">
       <div className="container-narrow">
         <h2 className="text-4xl font-display mb-4">The fastest way to talk to the continent.</h2>
         <p className="text-lg text-slate-600 mb-10 max-w-2xl">We run the routes, the SMTP and the support — so you only manage one API key and one invoice.</p>
@@ -27,7 +27,7 @@ const WhyWavi = () => {
               </div>
               <div>
                 <h3 className="font-semibold">One API, one dashboard</h3>
-                <p className="mt-2 text-sm text-slate-600">Send SMS, Email and WhatsApp without integrating multiple vendors.</p>
+                <p className="mt-2 text-sm text-slate-600">Send SMS, Voice and WhatsApp without integrating multiple vendors.</p>
               </div>
             </div>
           </div>
@@ -49,4 +49,4 @@ const WhyWavi = () => {
   );
 };
 
-export default WhyWavi;
+export default WhyMessagingApp;

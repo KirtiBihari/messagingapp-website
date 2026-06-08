@@ -9,7 +9,7 @@ const Hero = () => {
           Everywhere on the continent.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-brand-600">
-          Wavi Africa is the single place to send SMS, Email and soon WhatsApp to customers across Africa. One API, one dashboard, one wallet.
+          MessagingApp is the single place to send SMS, Voice and soon WhatsApp to customers across Africa. One API, one dashboard, one wallet.
         </p>
 
         <div className="mt-8 flex gap-4">

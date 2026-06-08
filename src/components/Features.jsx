@@ -2,9 +2,9 @@ import { FaRocket, FaLock, FaHeadset } from 'react-icons/fa';
 
 const Features = () => {
   return (
-    <section className="py-16">
+    <section className="py-14">
       <div className="container-narrow">
-        <h2 className="text-3xl font-display mb-8">Why teams pick Wavi</h2>
+        <h2 className="text-3xl font-display mb-8">Why teams pick MessagingApp</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="card text-left">

@@ -14,7 +14,7 @@ const About = () => {
             We build the <span className="italic text-brand-700">plumbing</span> African businesses send on.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-brand-600">
-            Wavi Africa is the communication layer for businesses operating across Africa. Direct SMPP routes to local carriers, a managed Postfix cluster for email, and WhatsApp Business API coming soon - all from one platform, one API and one wallet.
+            MessagingApp is the communication layer for businesses operating across Africa. Direct SMPP routes to local carriers, a managed Postfix cluster for voice, and WhatsApp Business API coming soon - all from one platform, one API and one wallet.
           </p>
         </section>
 

@@ -1,20 +1,24 @@
 import { Link } from 'react-router-dom';
 import { FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import AppIcon from './AppIcon';
 
 const Footer = () => {
   return (
     <footer className="mt-24 border-t border-brand-200 bg-white/40">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-14">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1.6fr)_repeat(3,minmax(0,1fr))]">
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-semibold text-brand-950">Messaging App</h3>
-            </div>
+                <h3 className="text-2xl font-semibold text-brand-950 flex items-center gap-2">
+                  <AppIcon className="w-6 h-6" />
+                  Messaging App
+                </h3>
+              </div>
             <p className="max-w-xl text-sm leading-7 text-brand-600">
-              Communication infrastructure for African businesses. SMS, Email and WhatsApp - one platform, fair pricing, local support.
+              Communication infrastructure for African businesses. SMS, Voice and WhatsApp - one platform, fair pricing, local support.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <label htmlFor="newsletter" className="sr-only">Email</label>
+              <label htmlFor="newsletter" className="sr-only">Voice</label>
               <input
                 id="newsletter"
                 type="email"
@@ -31,7 +35,7 @@ const Footer = () => {
             <h4 className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-600">Products</h4>
             <ul className="mt-6 space-y-3 text-sm text-brand-700">
               <li><Link to="/products#sms" className="transition hover:text-brand-950">SMS</Link></li>
-              <li><Link to="/products#email" className="transition hover:text-brand-950">Email & SMTP</Link></li>
+              <li><Link to="/products#voice" className="transition hover:text-brand-950">Voice</Link></li>
               <li><Link to="/products#whatsapp" className="transition hover:text-brand-950">WhatsApp</Link></li>
             </ul>
           </div>
@@ -58,9 +62,9 @@ const Footer = () => {
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-brand-200 pt-8 text-sm text-brand-600 md:flex-row md:items-center">
           <p>© 2026 Messaging App. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-4 text-brand-700">
-            <a href="https://x.com/WaviAfrica" className="transition hover:text-brand-950">X / Twitter</a>
-            <a href="https://www.instagram.com/waviafrica/" className="transition hover:text-brand-950">Instagram</a>
-            <a href="https://www.youtube.com/@WaviAfrica" className="transition hover:text-brand-950">YouTube</a>
+            <a href="https://x.com/MessagingApp" className="transition hover:text-brand-950">X / Twitter</a>
+            <a href="https://www.instagram.com/messagingapp/" className="transition hover:text-brand-950">Instagram</a>
+            <a href="https://www.youtube.com/@MessagingApp" className="transition hover:text-brand-950">YouTube</a>
           </div>
         </div>
       </div>

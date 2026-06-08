@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
+import AppIcon from './AppIcon';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,10 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 border-b border-brand-200/60 bg-gray-50/80 backdrop-blur">
       <div className="container mx-auto flex items-center justify-between gap-6 px-4 py-4">
-        <Link to="/" className="text-xl font-semibold tracking-tight text-brand-950">Messaging App</Link>
+        <Link to="/" className="text-xl font-semibold tracking-tight text-brand-950 flex items-center gap-2">
+          <AppIcon className="w-6 h-6" />
+          Messaging App
+        </Link>
 
         <nav className="hidden items-center gap-8 md:flex text-sm font-medium text-brand-700">
           <Link to="/" className="hover:text-brand-950 transition">Home</Link>
@@ -19,7 +23,7 @@ const Header = () => {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a href="#login" className="rounded-full border border-brand-300 bg-white px-5 py-2 text-sm font-semibold text-brand-900 transition hover:border-brand-400 hover:text-brand-950">Sign in</a>
+          <Link to="/signin" className="rounded-full border border-brand-300 bg-white px-5 py-2 text-sm font-semibold text-brand-900 transition hover:border-brand-400 hover:text-brand-950">Sign in</Link>
           <Link to="/contact" className="rounded-full bg-brand-950 px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-800">Get started</Link>
         </div>
 
@@ -42,7 +46,7 @@ const Header = () => {
             <Link to="/blog" className="block rounded-2xl px-4 py-3 hover:bg-brand-100">Blog</Link>
             <Link to="/about" className="block rounded-2xl px-4 py-3 hover:bg-brand-100">About</Link>
             <Link to="/contact" className="block rounded-2xl px-4 py-3 hover:bg-brand-100">Contact</Link>
-            <a href="#login" className="block rounded-2xl bg-brand-950 px-4 py-3 text-center text-white hover:bg-brand-800 transition">Sign in</a>
+            <Link to="/signin" className="block rounded-2xl bg-brand-950 px-4 py-3 text-center text-white hover:bg-brand-800 transition">Sign in</Link>
             <Link to="/contact" className="block rounded-2xl border border-brand-200/60 px-4 py-3 text-center text-brand-950 hover:bg-brand-100 transition">Get started</Link>
           </div>
         </div>
