@@ -4,7 +4,7 @@ import AppIcon from './AppIcon';
 
 const Footer = () => {
   return (
-    <footer className="mt-24 border-t border-brand-200 bg-white/40">
+    <footer className="border-t border-brand-200 bg-white/40">
       <div className="container mx-auto px-4 py-14">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1.6fr)_repeat(3,minmax(0,1fr))]">
           <div className="space-y-6">
@@ -15,7 +15,7 @@ const Footer = () => {
                 </h3>
               </div>
             <p className="max-w-xl text-sm leading-7 text-brand-600">
-              Communication infrastructure for African businesses. SMS, Voice and WhatsApp - one platform, fair pricing, local support.
+              Communication infrastructure for Indian businesses. SMS, Voice and WhatsApp - one platform, fair pricing, local support.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <label htmlFor="newsletter" className="sr-only">Voice</label>

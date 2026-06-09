@@ -11,10 +11,10 @@ const About = () => {
         <section className="container-narrow pt-20 pb-16">
           <span className="chip">About</span>
           <h1 className="mt-6 max-w-4xl font-display text-5xl leading-[1.05] md:text-6xl">
-            We build the <span className="italic text-brand-700">plumbing</span> African businesses send on.
+            We build the <span className="italic text-brand-700">plumbing</span> Indian businesses send on.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-brand-600">
-            MessagingApp is the communication layer for businesses operating across Africa. Direct SMPP routes to local carriers, a managed Postfix cluster for voice, and WhatsApp Business API coming soon - all from one platform, one API and one wallet.
+            MessagingApp is the communication layer for businesses operating across India. Direct SMPP routes to local carriers, a managed Postfix cluster for voice, and WhatsApp Business API coming soon - all from one platform, one API and one wallet.
           </p>
         </section>
 

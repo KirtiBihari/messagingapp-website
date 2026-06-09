@@ -55,7 +55,7 @@ const Products = () => {
               </div>
 
               <div className="mt-8 space-y-8">
-                <p className="text-base leading-8 text-slate-700">Transactional, marketing and OTP SMS across Africa. Built on direct SMPP routes and real delivery receipts - not a reseller of a reseller.</p>
+                <p className="text-base leading-8 text-slate-700">Transactional, marketing and OTP SMS across India. Built on direct SMPP routes and real delivery receipts - not a reseller of a reseller.</p>
                 <ul className="grid gap-3 sm:grid-cols-2">
                   <li className="flex items-start gap-3 text-sm text-slate-700">
                     <span className="mt-0.5 text-emerald-700">
@@ -63,7 +63,7 @@ const Products = () => {
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     </span>
-                    <span>Direct carrier connections in major African markets</span>
+                    <span>Direct carrier connections in major Indian markets</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm text-slate-700">
                     <span className="mt-0.5 text-emerald-700">

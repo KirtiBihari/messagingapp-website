@@ -4,8 +4,8 @@ const WhyMessagingApp = () => {
   return (
     <section className="py-14">
       <div className="container-narrow">
-        <h2 className="text-4xl font-display mb-4">The fastest way to talk to the continent.</h2>
-        <p className="text-lg text-slate-600 mb-10 max-w-2xl">We run the routes, the SMTP and the support — so you only manage one API key and one invoice.</p>
+        <h2 className="text-4xl font-display mb-4">Built for Indian businesses. Designed to scale.</h2>
+        <p className="text-lg text-slate-600 mb-10 max-w-2xl">Deliver faster, scale smarter and connect seamlessly across India.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="card text-left">
@@ -14,7 +14,7 @@ const WhyMessagingApp = () => {
                 <FaGlobeAsia className="text-white text-xl" />
               </div>
               <div>
-                <h3 className="font-semibold">Built for Africa</h3>
+                <h3 className="font-semibold">Built for India</h3>
                 <p className="mt-2 text-sm text-slate-600">Local routes, regional carriers and local support for reliable delivery.</p>
               </div>
             </div>
@@ -39,7 +39,7 @@ const WhyMessagingApp = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Compliance-ready</h3>
-                <p className="mt-2 text-sm text-slate-600">Sender registration, opt-outs and deliverability best-practices handled.</p>
+                <p className="text-sm text-slate-600">Sender registration, opt-outs and deliverability best-practices handled.</p>
               </div>
             </div>
           </div>
